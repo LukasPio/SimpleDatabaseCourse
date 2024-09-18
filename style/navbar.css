@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
-  padding: 2%;
-  height: 15vh;
+  padding: 5px;
+  height: 12.5vh;
   width: 100%;
   background-color: rgb(35, 34, 34);
   justify-content: space-between;
@@ -9,14 +9,24 @@
   color: white;
 }
 
+.navBarLeft {
+  display: flex;
+  align-items: center;
+}
+
 .navBarTitle {
   font-size: 1.75rem;
-  width: 10%;
+}
+
+.nav-logo {
+  width: 60px;
+  height: 40px;
+  padding-left: 2px;
 }
 
 .links {
   text-align: right;
-  width: 90%;
+  width: 500px;
 }
 
 .aLink {
@@ -71,4 +81,54 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@media (max-width: 680px) {
+  .aLink {
+    margin: 0 2%;
+    font-size: 1rem;
+  }
+  .navBarTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-logo {
+    display: none;
+  }
+  .aLink {
+    margin: 0 3%;
+    font-size: 1.25rem;
+  }
+  .links {
+    text-align: center;
+    width: 100%;
+  }
+  .navBarTitle {
+    display: none;
+  }
+}
+
+@media (max-width: 422px) {
+  .navbar {
+    height: 30vh;
+  }
+  .nav-logo {
+    width: 200px;
+    height: 80px;
+    display: inherit;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .aLink {
+    font-size: 1.25rem;
+  }
 }
