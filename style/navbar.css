@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  padding: 5px;
+  height: 12.5vh;
+  width: 100%;
+  background-color: rgb(35, 34, 34);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navBarTitle {
+  font-size: 1.75rem;
+}
+
+.nav-logo {
+  width: 60px;
+  height: 40px;
+  padding-left: 2px;
+}
+
+.links {
+  text-align: right;
+  width: 500px;
+}
+
+.aLink {
+  margin: 0 3%;
+  font-size: 1.35rem;
+  transition: 0.6s;
+}
+
+.aLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4c4b4b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.4s;
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #6d6d6d;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 680px) {
+  .aLink {
+    margin: 0 2%;
+    font-size: 1rem;
+  }
+  .navBarTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-logo {
+    display: none;
+  }
+  .aLink {
+    margin: 0 3%;
+    font-size: 1.25rem;
+  }
+  .links {
+    text-align: center;
+    width: 100%;
+  }
+  .navBarTitle {
+    display: none;
+  }
+}
+
+@media (max-width: 422px) {
+  .navbar {
+    height: 30vh;
+  }
+  .nav-logo {
+    width: 200px;
+    height: 80px;
+    display: inherit;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .aLink {
+    font-size: 1.25rem;
+  }
+}
