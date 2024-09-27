@@ -6,17 +6,13 @@
     flex-direction: column;
 }
 
-.header{
-    width: 100%;
-    padding: 3.5%;
-}
-
 /* Talvez mudar o nome!! a borda é apenas para ver as dimensões!! */
-.informations{
+.textContainer{
     width: 70%;
     border-style: solid;
     border-radius: 2px;
     margin-right: 20%;
+    margin-bottom: 3.5%;
     margin-left: 10%;
     padding: 2%;
 
