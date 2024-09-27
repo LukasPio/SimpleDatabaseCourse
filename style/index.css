@@ -1,4 +1,27 @@
 @import "./default.css";
 @import "./navbar.css";
 @import "./body.css";
-@import "./text.css";
+
+.title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    padding: 3.5%;
+}
+
+
+.subtitleText{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: justify;
+}
