@@ -1,0 +1,19 @@
+.title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.subtitleText{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    justify-content: center;
+}
+
+.text{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    justify-content: center;
+}
