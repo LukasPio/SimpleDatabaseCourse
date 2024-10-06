@@ -6,14 +6,18 @@
     flex-direction: column;
 }
 
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
 /* Talvez mudar o nome!! a borda é apenas para ver as dimensões!! */
 .textContainer{
     width: 70%;
     border-style: solid;
     border-radius: 2px;
-    margin-right: 20%;
-    margin-bottom: 3.5%;
-    margin-left: 10%;
     padding: 2%;
-
 }
