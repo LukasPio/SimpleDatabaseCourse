@@ -1,6 +1,7 @@
 @import "./default.css";
 @import "./navbar.css";
 @import "./body.css";
+@import "./styleM.css";
 
 .title{
     font-size: 3.5rem;
@@ -9,7 +10,6 @@
     text-align: center;
     padding: 3.5%;
 }
-
 
 .subtitleText{
     font-size: 2.5rem;
