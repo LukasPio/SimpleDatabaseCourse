@@ -6,6 +6,14 @@
     flex-direction: column;
 }
 
+.pageModelagem{
+    height: auto;
+    width: 100%;
+    background-color: rgb(38, 42, 46);
+    display: flex;
+    flex-direction: column;
+}
+
 .container{
     width: 100%;
     display: flex;
@@ -18,6 +26,8 @@
 .textContainer{
     width: 70%;
     border-style: solid;
-    border-radius: 2px;
+    border-width: 1px;
     padding: 2%;
+    background-color: rgb(47, 51, 56);
+    background-color: rgb(47, 51, 56);
 }
