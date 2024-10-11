@@ -3,6 +3,7 @@
 @import "./body.css";
 @import "./styleM.css";
 @import "./modelagemDados.css";
+@import "./mainStepsToDataModeling.css";
 
 .page{
     height: 200vh;
