@@ -1,9 +1,9 @@
 @import "./default.css";
 @import "./navbar.css";
 @import "./body.css";
-@import "./styleM.css";
 @import "./modelagemDados.css";
 @import "./mainStepsToDataModeling.css";
+@import "./howToModelData.css";
 
 .page{
     height: 200vh;
