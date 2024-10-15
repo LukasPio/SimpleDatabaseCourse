@@ -1,8 +1,8 @@
 @import "./default.css";
 @import "./navbar.css";
 @import "./body.css";
-@import "./styleM.css";
-@import "./modelagemDados.css";
+@import "./howToModelData.css";
+@import "./introductionToDataModeling.css";
 @import "./mainStepsToDataModeling.css";
 
 .page{
