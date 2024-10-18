@@ -65,6 +65,9 @@
     height: auto;
     object-fit: cover;
 }
+.img{
+    opacity: 0.4;
+}
 #text{
     position: absolute;
     color: #7ddcfa;
