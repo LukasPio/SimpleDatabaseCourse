@@ -6,6 +6,49 @@ ul > .li-mainStepsToDataModeling::before {
     content: "○";
     margin-right: 1%;
 }
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.logo{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 20px; 
+    text-decoration: none;
+    padding: 6px 15px;
+}
+.li{
+    list-style: none;
+    margin-left: 20px; 
+    text-decoration: none;
+    padding: 6px 15px;
+}
+.a{
+    text-decoration: none;
+    padding: 6px 15px;
+}
+.a:hover, #active{
+    background: #fff;
+    color: rgba(0,114,255,1);
+    border-radius: 20px;
+    
+}
 
 .li-mainStepsToDataModeling {
     margin-left: 3%;
@@ -55,4 +98,5 @@ ul > .li-mainStepsToDataModeling::before {
       font-size: 1rem;
       letter-spacing: 0.5px;
   }
+  
 }
