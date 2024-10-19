@@ -4,6 +4,7 @@
 @import "./introductionToDataModeling.css";
 @import "./mainStepsToDataModeling.css";
 @import "./howToModelData.css";
+@import "./conceptualModel.css";
 
 .page{
     height: 200vh;
