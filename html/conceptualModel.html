@@ -25,26 +25,94 @@
             <br>
             <p class="subtitle-text">Entidade</p>
             <p class="text">
-                Pode ser tanto algo real (animais, pessoas, objetos,etc) como um conceito (trabalho, projeto, empresa), 
-                deve ser identificada logo na engenharia de requisitos e representa um conjunto de objetos com caracteristicas semelhantes, 
-                entidades são as tabelas em um banco de dados.
+                Pode ser tanto algo real (animais, pessoas, objetos,etc)
+                 como um conceito (trabalho, projeto, empresa), deve ser
+                  identificada logo na engenharia de requisitos e representa
+                   um conjunto de objetos com caracteristicas semelhantes, 
+                entidades são as tabelas em um banco de dados. É
+                 representado por um retangulo no modelo conceitual.
                 <br>
                 <br>
                 Representação grafica:
                 <br>
                 <img src="../assets/Entity.png" class="text-img">
             </p>
-            <p class="subtitle-text">Atributo</p>
-            <p class="text">
-                Atributos são características ou propriedades que descrevem uma entidade em um banco de dados. Em um diagrama de Entidade-Relacionamento (ER), 
-                eles são representados por elipses ligadas à entidade correspondente. Cada atributo contém valores específicos que fornecem informações detalhadas sobre a entidade. 
-                Por exemplo, em uma entidade "Aluno", atributos como "Nome", "Idade" e "Matrícula" descrevem diferentes aspectos de cada aluno.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cum minima beatae distinctio dolor magni delectus! Voluptatum laudantium omnis est nobis inventore cum laborum, ullam dolor unde non autem eius.
+
+            <p class="subtitle-text">Relacionamento</p>
+            <p class="text"> 
+                É a associação entre uma ou mais entidades. 
+                A quantidade de entidades que participam de uma associação 
+                determina o grau de relacionamento (Unário, Binário, 
+                Ternário, Quaternário, N-ário). É representado por um
+                losango ligando ás entidades que participam do relacionamento
+                no modelo conceitual.
+
                 <br>
                 <br>
                 Representação grafica:
                 <br>
                 <img src="../assets/Entity.png" class="text-img">
+            </p>
+
+            <p class="subtitle-text">Cardinalidade</p>
+            <p class="text">
+                A Cardinalidade determina o número de ocorrências que uma
+                instância de uma entidade pode estar associada via um relacionamento. <br>
+                Tipos:
+                <ul class="text">
+                    <li class="li-mainStepsToDataModeling">Um para um (1:1) - Uma entidade X está associada
+                        a no máximo a uma entidade Y e vice-versa;
+                    </li>
+                    <li class="li-mainStepsToDataModeling">Um para Muitos (1:n) - Uma entidade X está associada
+                        a varias entidades Y, porém Y no maximo a uma X (minimo 1, maximo "varias");
+                    </li>
+                    <li class="li-mainStepsToDataModeling">Muitos para Muitos (n:m) - Uma entidade X está associada
+                        a varias entidades Y e vice-versa.
+                    </li>
+                  </ul> <br>
+
+            </p>
+
+            <p class="subtitle-text">Atributo</p>
+            <p class="text">
+                Atributos são características ou propriedades que descrevem
+                 uma entidade em um banco de dados. Em um diagrama de
+                  Entidade-Relacionamento (ER), eles são representados por 
+                  elipses ligadas à entidade correspondente. Cada atributo 
+                  contém valores específicos que fornecem informações
+                   detalhadas sobre a entidade. Por exemplo, em uma entidade
+                    "Aluno", atributos como "Nome", "Idade" e "Matrícula"
+                     descrevem diferentes aspectos de cada aluno.
+                     Atributos são divididos entre alguns tipos:
+                     <ul class="text">
+                        <li class="li-mainStepsToDataModeling">
+                            Simples (ou Atômicos): São indivisiveis;
+                        </li>
+                        <li class="li-mainStepsToDataModeling">
+                            Compostos: Podem ser divididos em partes;
+                        </li>
+                        <li class="li-mainStepsToDataModeling">
+                            Monovalorados: Apresentam um unico valor para uma mesma entidade:
+                        </li>
+                        <li class="li-mainStepsToDataModeling">
+                            Multivalorados: Apresentam um conjunto de valores para uma mesma entidade;
+                        </li>
+                        <li class="li-mainStepsToDataModeling">
+                            Derivados: Possuem uma relação com um outro atributo.
+                        </li> <br>
+                      </ul> <br>
+                      <p class="subtitle-text">Atributo Identificador</p>
+                      <p class="text">
+                      Atributo Identificador é o mesmo que uma Chave Primaria,
+                       um ou mais atributos cujos valores distinguem uma ocorrência 
+                       das outras da mesma entidade. <br>
+                      Exemplo: o RG ou o CPF de um individuo, o IP de um computador.
+               <br>
+                <br>
+                Representação grafica:
+                <br>
+                <img src="../assets/Entity.png" class="text-img">
+            </p>
             </p>
         </div>
     </div>
