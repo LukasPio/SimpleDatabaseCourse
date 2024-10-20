@@ -1,5 +1,12 @@
 @import "./default.css";
 @import "./navbar.css";
+@import "./howToModelData.css";
+@import "./introductionToDataModeling.css";
+@import "./mainStepsToDataModeling.css";
+@import "./howToModelData.css";
+@import "./conceptualModel.css";
+@import "./logicModel.css";
+@import "./physicalModel.css";
 
 body {
     background-color: rgb(60, 65, 72);
