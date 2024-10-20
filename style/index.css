@@ -7,6 +7,7 @@
 @import "./conceptualModel.css";
 @import "./logicModel.css";
 @import "./physicalModel.css";
+@import "./howTobuilEfficientDB.css";
 
 .page{
     height: 200vh;
