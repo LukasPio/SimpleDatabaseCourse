@@ -8,10 +8,6 @@
 @import "./logicModel.css";
 @import "./physicalModel.css";
 
-body {
-    background-color: rgb(19, 37, 62);
-}
-
 .courses {
     height: 100%;
     width: 100%;
