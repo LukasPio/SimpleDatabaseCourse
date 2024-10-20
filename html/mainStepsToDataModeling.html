@@ -29,7 +29,7 @@
             <p class="text">
               Você já deve saber a importância da modelagem de dados, mas você sabe
               o como esse processo é criado, seus símbolos ou quais são os passos necessários? <br>
-              O processo de modelagem de dados consiste no cumprimento de 6 passos, sendo eles:<br><br>
+              O processo de modelagem de dados consiste principalmente no cumprimento de 8 passos, sendo eles:<br><br>
               <ol class="text">
                 <li class="li-mainStepsToDataModeling">Identificação das entidades.</li>
                 <li class="li-mainStepsToDataModeling">Identificação das principais propriedades de cada entidade.</li>
@@ -42,60 +42,96 @@
           </div>
 
           <div class="text-container">
-            <p class="subtitle-text">1. Identificação das entidades.</p>
+            <p class="subtitle-text">1. Entendimento do problema e levantamento dos requisitos.</p>
             <p class="text">
-              O processo de modelagem de dados se inicia com a identificação das entidades,
-              esse processo é responsável por identificar as entidades, itens, eventos ou conceitos
-              presentes no sistema.
+              O processo de modelagem de dados se inicia com a identificação do problema situacional,
+              esse processo é responsável por identificar as informações, itens, eventos ou conceitos
+              que usaremos no sistema, nessa fase devemos nos perguntar o que será necessário. Por exemplo:
+            </p>
+            <p class="text">
+Quais são as informações importantes? <br>
+O que queremos resolver? <br>
+De onde vem? Para onde vai?
             </p>
           </div>
 
           <div class="text-container">
-            <p class="subtitle-text">2. Identificação das principais propriedades da entidade.</p>
+            <p class="subtitle-text">2. Criacão do Modelo Entidade Relacionamento (MER).</p>
             <p class="text">
-              Neste passo deve se identificar as propriedades das entidades,
-              serão esses atributos que irão diferenciar umas das outras. Um exemplo
-              disso seria a entidade carro, o carro pode ter esses atributos, que diferenciam uns dos outros:<br>
+              Neste passo deve se identificar as entidades (caracteristicas importantes do nosso sistema),
+               atributos (caracteristicas das entidades) e como se relacionam entre si. Um exemplo
+              disso seria a entidade Namorado e Namorada, o relacionamento entre elas poderia ser Namorar,
+              alem disso essas entidades podem ter atributos que diferenciam um do outro, como:<br>
               <ul class="text">
-                <li class="li-mainStepsToDataModeling">Modelo</li>
-                <li class="li-mainStepsToDataModeling">Cor</li>
-                <li class="li-mainStepsToDataModeling">Ano de fabricação</li>
-              </ul>
+                <li class="li-mainStepsToDataModeling">RG</li>
+                <li class="li-mainStepsToDataModeling">Beleza</li>
+                <li class="li-mainStepsToDataModeling">Gostos</li>
+              </ul> <br>
             </p>
           </div>
           
           <div class="text-container">
-            <p class="subtitle-text">3. Identificar relacionamentos entre entidades.</p>
+            <p class="subtitle-text">3. Criacão de um Diagrama Entidade Relacionamento (DER).</p>
             <p class="text">
-              Neste passo deve se identificar as relações que as entidades tem umas
-              com as outras, pode se pensar que os relacionamentos são como as entidades
-              se "conversam", um exemplo disso seria: Vários carros(entidades) ficam em uma concessionária,
-              quando um cliente(outra entidade) compra um carro ele está interagindo com o carro!
+              Com entidades, Atributos e Relacionamentos esclarecidos,
+               devemos criar seu diagrama visual para descrever de forma simplificada o modelo.
+
+
             </p>
           </div>
           
           <div class="text-container">
-            <p class="subtitle-text">4. Identificar os atributos completamente.</p>
+            <p class="subtitle-text">4. Definição das cardinalidade de relacionamento.</p>
             <p class="text">
-              Neste passo deve se identificar todos os atributos e funcionalidades do sistema. 
-              Mapeando todo o sistema será possível realizar uma padronização na modelagem de dados.
+              Neste passo analisamos de que formas as relações são feitas, identificando quantidades
+              por exemplo: Namorado pode Namorar mais de 1ª Namorada? (se sim quantas). 
+              Descrevemos essas relações por meio das cardinalidades.
             </p>
           </div>
 
           <div class="text-container">
-            <p class="subtitle-text">5. Normalização, redução de redundâncias e melhora de desempenho.</p>
+            <p class="subtitle-text">5. Definição de Um modelo Lógico.</p>
             <p class="text">
-              Neste passo deve se identificar qualquer tipo de redundância desnecessária e resolve-la,
-               pois isso aumenta o desempenho do sistema! Mas cuidado pois isso pode melhorar
-                ou piorar a legibilidade do sistema.
+             Com MER e DER definidos, devemos "traduzir" as entidades, atributos e relacionamentos
+              em tabelas, com diversas linhas e colunas. <br>
+
+              Cada entidade origina uma tabela, cada coluna dessa tabela são os atributos,
+              cada linha será uma ocorrência da entidade da tabela e os relacionamentos estarão
+              em como cada entidade se relaciona.
             </p>
           </div>
 
           <div class="text-container">
-            <p class="subtitle-text">6. Finalização e validação do modelo de dados.</p>
+            <p class="subtitle-text">6. Normalização das Tabelas.</p>
             <p class="text">
-              Esse é o último passo da modelagem de dados,
-               nele deve se repetir os outros passo e o sistema refinado conforme o necessário.
+              Neste passo analizamos as estrutura das tabelas para ter certeza que suas caracteristicas
+              atendem os pré-requisitos, para garantir que estão bem estruturadas. São aplicadas uma série
+              de regras para assegurar a qualidade da tabela em suas formas.
+            </p>
+          </div>
+
+          <div class="text-container">
+            <p class="subtitle-text">7. Criacão de um dicionário de dados.</p>
+            <p class="text">
+              O dicionário de dados é um documento, onde registramos toda a lógica utilizada e pensada
+               na criação de todas as tabelas, entidades, relacionamentos, atributos, restrições. <br>
+               
+               Uma forma de documentar o projeto para facilitar futuras manutenções nesse banco de dados
+               e relembrar caracteristicas importantes, como um manual de instruções para esse banco de
+               dados.
+            </p>
+          </div>
+
+          <div class="text-container">
+            <p class="subtitle-text">8. Implementação do modelo físico e realização de testes.</p>
+            <p class="text">
+              Com o modelo de banco de dados definido, a estrutura da tabela e suas colunas, transferimos
+               tudo para um Sistema de Banco de dados Relacional (como SQL server, MySQL, PostgreSQL ou Oracle),
+               utilizando a linguagem SQL. <br>
+
+               Após criarmos essas tabelas nos em algum dos Sistemas de Banco de Dados, executamos uma série de
+                testes, repetindo algumas vezes esse ciclo, fazendo novamente cada uma das etapas assegurando
+                que toda a modelagem foi feita adequadamente.
             </p>
           </div>
 
