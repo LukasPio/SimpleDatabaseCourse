@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como construir um DB eficiente</title>
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
+  <body>
+    <div class="page-dataBase">
+      <header class="header">
+        <a href="../index.html" class="logo"
+          ><img src="../assets/Logo.jpg" width="80vh" height="80vh"
+        /></a>
+        <ul class="ul">
+          <li class="li"><a href="#" class="a" id="active">Home</a></li>
+          <li class="li"><a href="#" class="a">Dropdown</a></li>
+          <li class="li"><a href="#" class="a">Quem somos</a></li>
+        </ul>
+      </header>
+      <section class="section">
+        <img src="../assets/Modelos.png" class="img" />
+        <h2 id="text">Como construir um DB eficiente</h2>
+      </section>
+
+      <div class="container">
+        <div class="text-container">
+          <p class="subtitle-text">Você sabe o que é um DB?</p>
+          <p class="text">
+            Para começarmos a falar sobre banco de dados é importante ter
+            conhecimento de alguns fundamentos e nomenclaturas sobre banco de
+            dados, vamos ver algumas!<br />
+            Um banco de dados não é nada mais que uma coleção de dados
+            armazenados eletronicamente, apesar de parecer bem simples é algo
+            extremamente importante!<br />
+            outro conceito importante são as keys(chaves) que são uma coluna
+            utilizada para identificar unicamente uma linha.<br />
+            O termo DB é derivado da palavra database(banco de dados), ele se
+            refere ao banco de dados.<br />
+            Outro termo importante são as tables(tabelas) que iremos ver mais à
+            frente.
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="subtitle-text">O que é um bom design de DB?</p>
+          <p class="text">
+            Existem alguns principios sobre Db que foram estabelecidos pelo
+            mundo, um deles seriam as chamadas redundâncias ou informações
+            duplicadas, elas são ruins por que geralmente diminuem a performance
+            além de aumentar as chances de erros ou comportamentos
+            inesperados.<br />
+            Um outro principio é sobre o nivel de precisão e totalidade das
+            informações presentes no DB, esse principio é muito importante pois
+            quaisquer informações tiradas do DB possívelmente estarão erradas,
+            consequentemente qualquer ação utilizando o DB irão conter
+            informações erradas!
+          </p>
+        </div>
+
+        <div class="text-container">
+          <p class="subtitle-text">O design do DB.</p>
+          <p class="text">
+            É importante ressaltar que cada DB tem diferentes propósitos, então
+            cada db vai ter um design diferente! Mas geralmente os Dbs seguem
+            esses passos:<br />
+          </p>
+
+          <ul class="text">
+            <li class="li-dataBase">Determinar a função do DB.</li>
+            <p class="p-dataBase">
+              Isso vai ajudar a concluir os próximos passos.
+            </p>
+
+            <li class="li-dataBase">Decida quais informações vai armazenar.</li>
+            <p class="p-dataBase">
+              Pegue todas as informações que você talvez queira armazenar.
+            </p>
+
+            <li class="li-dataBase">Divida as informações em tabelas.</li>
+            <p class="p-dataBase">
+              Nomeia essas tabelas de acordo com as informações que ela vai ter.
+            </p>
+
+            <li class="li-dataBase">Transforme as informações em colunas.</li>
+            <p class="p-dataBase">
+              Decida quais informações serão armazenadas. Cada informação se
+              tornara um campo que será mostrado como uma coluna, um exemplo: A
+              tabela carros terá o campo modelo, cor e data de fabricação.
+            </p>
+
+            <li class="li-dataBase">Especifique as chaves primárias</li>
+            <p class="p-dataBase">
+              Especifique a chave primária da tabela, a coluna com primary key é
+              utilizada para identificar unicamente uma linha, um exemplo de
+              primary key seria: funcionario_ID ou ID_produto.
+            </p>
+
+            <li class="li-dataBase">Defina as relações das tabelas</li>
+            <p class="p-dataBase">
+              Olhe cada tabela e decida como as informações de uma tabela podem
+              estar relacionadas com outras.
+            </p>
+
+            <li class="li-dataBase">Refine seu design de DB</li>
+            <p class="p-dataBase">
+              Tente encontrar possiveis erros e redundâncias, tente otimizar o
+              sistemas e fazer ajustes conforme o necessário.
+            </p>
+
+            <li class="li-dataBase">Refine seu design de DB</li>
+            <p class="p-dataBase">
+              Tente encontrar possiveis erros e redundâncias, tente otimizar o
+              sistemas e fazer ajustes conforme o necessário.
+            </p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
