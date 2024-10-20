@@ -9,10 +9,89 @@
 @import "./physicalModel.css";
 @import "./howTobuilEfficientDB.css";
 
-.page{
-    height: 200vh;
+.courses {
+    height: 100%;
     width: 100%;
-    background-color: rgb(60, 65, 72);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    justify-items: center;
+}
+
+.course-card {
+    height: 230px;
+    width: 350px;
+    border: solid black 2px;
+    background-image: url("../assets/ModelagemDeDados.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    margin: 1rem;
+    border-radius: 4px;
+}
+
+.course-title {
+    background-color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.courses-section-title {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .course-card {
+    width: 250px;
+    height: 130;
+    }
+
+    .course-title {
+        font-size: 16px;
+    }
+
+    .courses {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+}
+
+@media (max-width: 540px) {
+    .course-card {
+    width: 200px;
+    height: 150px;
+    }
+
+    .courses {
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+}
+}
+
+@media (max-width: 430px) {
+    .course-card {
+    width: 160px;
+    height: 120px;
+    }
+
+    .course-title {
+        font-size: 12px;
+    }
+
+    .courses {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+}
+
+@media (max-width: 350px) {
+    .course-card {
+    width: 140px;
+    height: 100px;
+    }
+
+    .courses {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
 }

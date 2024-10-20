@@ -1,0 +1,99 @@
+@import "./default.css";
+@import "./navbar.css";
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+.member-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 60px;
+    margin-right: 1.5rem;
+}
+
+.team-member {
+    background-color: rgb(15, 30, 50);
+    margin: 0.25rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1.75rem;
+}
+
+.team {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.team-section-title {
+    padding: 0.75rem;
+}
+
+div > h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.project-description {
+    border: solid rgb(15, 30, 50) 2px;
+    padding: 0.5rem;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+}
+
+@media (max-width: 680px) {
+    .member-picture {
+        width: 130px;
+        height: 130px;
+    }
+
+    .team-member > div > p {
+        font-size: 13px
+    }
+    
+    div > h3 {
+    font-size: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .team-member > div > p {
+        font-size: 11px
+    }
+    div > h3 {
+    font-size: 20px;
+    }
+    .project-description {
+    font-size: 16px;
+}
+}
+
+@media (max-width: 380px) {
+    .team-member > div > p {
+        font-size: 9px;
+    }
+    .team-member {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+div > h3 {
+    font-size: 16px;
+    }
+
+    .project-description {
+    border: solid rgb(15, 30, 50) 2px;
+    padding: 0.5rem;
+    text-align: center;
+    width: 80%;
+    font-size: 13px;
+}   
+}
