@@ -39,9 +39,9 @@
     opacity: 0.6;
 }
 
-.title{
-    font-size: 3rem;
-    font-weight: 400;
+.title-introductionToDataModeling{
+    font-size: 2.8rem;
+    font-weight: 650;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,7 +74,7 @@
 }
 
   @media (max-width: 768px){
-    .title{
+    .title-introductionToDataModeling{
       font-size: 2rem;
   }
   .subtitle-text{
@@ -85,11 +85,12 @@
   }
   .text{
       font-size: 1.1rem;
+      text-align: left;
   }
 }
 
   @media (max-width: 480px){
-      .title{
+      .title-introductionToDataModeling{
         font-size: 1.5rem;
     }
     .subtitle-text{
@@ -104,7 +105,7 @@
 }
 
 @media (max-width: 328px){
-  .title{
+  .title-introductionToDataModeling{
     font-size: 1.2rem;
   }
   .subtitle-text{
@@ -117,47 +118,4 @@
       font-size: 1rem;
       letter-spacing: 0.5px;
   }
-  .header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
-.logo{
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-left: 20px; 
-    text-decoration: none;
-    padding: 6px 15px;
-}
-.li{
-    list-style: none;
-    margin-left: 20px; 
-    text-decoration: none;
-    padding: 6px 15px;
-}
-.a{
-    text-decoration: none;
-    padding: 6px 15px;
-}
-.a:hover, #active{
-    background: #fff;
-    color: rgba(0,114,255,1);
-    border-radius: 20px;
-    
-}
 }
