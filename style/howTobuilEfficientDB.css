@@ -15,17 +15,35 @@
     margin-left: 5%;
 }
 
+.title-DB{
+    font-size: 2.8rem;
+    font-weight: 650;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #7ddcfa;
+    z-index: 10;
+    white-space: nowrap;
+    text-align: center;
+    word-break: break-word;
+}
+
+
 @media (max-width: 768px){
-    #text{
-        font-size: 3rem;
+    .title-DB{
+        font-size: 2rem;
     }
     .header, .ul{
         flex-direction: column;
     }
+    .p-dataBase{
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px){
-    #text{
-        font-size: 2.1rem;
+    .title-DB{
+        font-size: 1.5rem;
     }
 }
