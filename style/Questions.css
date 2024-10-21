@@ -1,0 +1,151 @@
+.question-one{
+    display: none;
+}
+
+.question-two{
+    display: none;
+}
+
+.question-three{
+    display: none;
+}
+
+.question-four{
+    display: none;
+}
+
+.question-five{
+    display: none;
+}
+
+.question-six{
+    display: none;
+}
+
+.question-seven{
+    display: none;
+}
+
+.question-eight{
+    display: none;
+}
+
+.question-nine{
+    display: none;
+}
+
+.aquestion-ten{
+    display: none;
+}
+
+.button-one{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-two{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-three{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-four{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-five{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-six{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-seven{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-eight{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-nine{
+    background-color: rgb(149, 7, 192);
+}
+
+.button-ten{
+    background-color: rgb(149, 7, 192);
+}
+
+.principal-container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 42, 140, 1) 35%, rgba(0, 114, 255, 1) 100%);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+}
+
+.li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.a {
+    text-decoration: none;
+    padding: 6px 15px;
+}
+
+.a:hover,
+#active {
+    background: #fff;
+    color: rgba(0, 114, 255, 1);
+    border-radius: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.text-img{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
