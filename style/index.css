@@ -59,7 +59,7 @@
 }
 
 .how-to-build {
-    background-image: url("../assets/how_to_build.webp");
+    background-image: url("../assets/physic_model.webp");
 }
 
 .notation-data {
@@ -79,7 +79,7 @@
 }
 
 .model-data {
-    background-image: url("../assets/model-data.webp");
+    background-image: url("../assets/ModelagemDeDados.png");
 }
 
 @media (max-width: 760px) {
