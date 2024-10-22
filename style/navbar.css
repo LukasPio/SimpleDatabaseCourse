@@ -118,21 +118,3 @@
     display: none;
   }
 }
-
-@media (max-width: 422px) {
-  .navbar {
-    height: 30vh;
-  }
-  .nav-logo {
-    width: 200px;
-    height: 80px;
-    display: inherit;
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-  }
-  .aLink {
-    font-size: 1.25rem;
-  }
-}
