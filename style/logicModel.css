@@ -70,6 +70,15 @@
     opacity: 0.6;
 }
 
+.text-img2{
+    width: 70%;
+    height: auto;
+    opacity: 0.6;
+    border: solid white 5px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(5, 18, 34);
+}
+
 .title{
     font-size: 2rem;
     font-weight: 400;
