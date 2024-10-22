@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/index.css" />
     <link rel="icon" type="image/png" href="../assets/Logo.jpg">
-    <title>Principais passos para notação de modelagem de dados</title>
+    <title>Notações de Modelagem de Dados</title>
   </head>
   
   <body>
@@ -28,94 +28,37 @@
       <div class="text-container-mainStepsToDataModeling">
         <p class="subtitle-text-mainStepsToDataModeling">O que é a notação de modelagem de dados?</p>
         <p class="text-mainStepsToDataModeling">
-          A notação de modelagem de dados é essencial para representar visualmente as estruturas de dados
-          e seus relacionamentos em um sistema. Você sabe como usar essa notação de forma eficiente?
-          Aqui estão os principais passos para aplicar corretamente a notação de modelagem de dados:
+          A notação de modelagem de dados é a representação visual das estruturas de dados e seus relacionamentos. Ela serve para facilitar a comunicação e o entendimento dos dados dentro de um sistema. Existem diversas notações que podem ser usadas para descrever visualmente um modelo de dados.
+        </p>
+        <br>
+        <p class="text-mainStepsToDataModeling">
+          Entre as notações mais comuns estão:
         </p>
         <ul class="text-mainStepsToDataModeling">
-          <li class="li-mainStepsToDataModeling">Entendimento do domínio e levantamento dos requisitos.</li>
-          <li class="li-mainStepsToDataModeling">Definição de entidades e relacionamentos no Modelo (MER).</li>
-          <li class="li-mainStepsToDataModeling">Criação do Diagrama Entidade-Relacionamento (DER).</li>
-          <li class="li-mainStepsToDataModeling">Definição de cardinalidade e participação.</li>
-          <li class="li-mainStepsToDataModeling">Criação do modelo lógico.</li>
-          <li class="li-mainStepsToDataModeling">Normalização de tabelas.</li>
-          <li class="li-mainStepsToDataModeling">Criação do dicionário de dados.</li>
-          <li class="li-mainStepsToDataModeling">Implementação do modelo físico e testes.</li>
+          <li class="li-mainStepsToDataModeling">Notação Entidade-Relacionamento (ER).</li>
+          <li class="li-mainStepsToDataModeling">Notação UML (Unified Modeling Language).</li>
+          <li class="li-mainStepsToDataModeling">Notações específicas de banco de dados como Chen e Bachman.</li>
         </ul>
       </div>
 
       <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">1. Entendimento do domínio e levantamento dos requisitos.</p>
+        <p class="subtitle-text-mainStepsToDataModeling">1. Notação Entidade-Relacionamento (ER)</p>
         <p class="text-mainStepsToDataModeling">
-          O processo começa com a identificação do problema e dos requisitos do sistema.
-          É crucial entender as informações necessárias, como elas se relacionam e o que será modelado.
-          Questões como "Quais entidades e atributos são importantes?" e "Como os dados se conectam?"
-          devem ser respondidas nesta etapa.
+          A notação ER é uma das mais usadas para modelagem de dados. Ela representa entidades (objetos ou coisas de interesse no domínio do sistema) e os relacionamentos entre elas. As entidades são representadas por retângulos, e os relacionamentos por losangos.
         </p>
       </div>
 
       <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">2. Definição de entidades e relacionamentos no MER.</p>
+        <p class="subtitle-text-mainStepsToDataModeling">2. Notação UML</p>
         <p class="text-mainStepsToDataModeling">
-          O Modelo Entidade-Relacionamento (MER) descreve as entidades do sistema, seus atributos
-          e os relacionamentos entre elas. Por exemplo, em um sistema de gerenciamento de biblioteca,
-          as entidades "Livro" e "Autor" podem se relacionar através de um relacionamento "Escrito por".
+          A UML é amplamente utilizada para modelar vários aspectos de sistemas, incluindo a modelagem de dados. Ela representa classes (equivalentes a entidades) e relacionamentos usando linhas que conectam as classes, com diferentes tipos de setas e marcadores que indicam os tipos de relacionamentos (como associações e dependências).
         </p>
       </div>
 
       <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">3. Criação do Diagrama Entidade-Relacionamento (DER).</p>
+        <p class="subtitle-text-mainStepsToDataModeling">3. Outras Notações</p>
         <p class="text-mainStepsToDataModeling">
-          O Diagrama Entidade-Relacionamento (DER) é a representação visual do MER, permitindo visualizar
-          as entidades, seus atributos e como elas se relacionam. É uma ferramenta fundamental para
-          entender a estrutura dos dados no sistema.
-          <br>
-          <img src="../assets/DER.jpg" class="text-img">
-        </p>
-      </div>
-
-      <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">4. Definição de cardinalidade e participação.</p>
-        <p class="text-mainStepsToDataModeling">
-          A cardinalidade define quantas ocorrências de uma entidade estão associadas a outra.
-          Por exemplo, um "Cliente" pode fazer "Múltiplos Pedidos", mas cada pedido é feito por apenas um cliente.
-          A participação define se o relacionamento é obrigatório ou opcional.
-        </p>
-      </div>
-
-      <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">5. Criação do modelo lógico.</p>
-        <p class="text-mainStepsToDataModeling">
-          O modelo lógico transforma o DER em tabelas que podem ser implementadas em um banco de dados relacional.
-          As entidades tornam-se tabelas, os atributos viram colunas, e os relacionamentos são representados
-          através de chaves estrangeiras.
-        </p>
-      </div>
-
-      <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">6. Normalização de tabelas.</p>
-        <p class="text-mainStepsToDataModeling">
-          A normalização assegura que as tabelas sejam estruturadas corretamente, eliminando redundâncias
-          e garantindo a consistência dos dados. Ela envolve uma série de regras aplicadas para dividir os
-          dados em tabelas adequadas.
-        </p>
-      </div>
-
-      <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">7. Criação do dicionário de dados.</p>
-        <p class="text-mainStepsToDataModeling">
-          O dicionário de dados documenta todos os detalhes do modelo, incluindo entidades, atributos,
-          tipos de dados, restrições e relacionamentos. É uma ferramenta vital para a manutenção e
-          expansão futura do sistema.
-        </p>
-      </div>
-
-      <div class="text-container-mainStepsToDataModeling">
-        <p class="subtitle-text-mainStepsToDataModeling">8. Implementação do modelo físico e testes.</p>
-        <p class="text-mainStepsToDataModeling">
-          Finalmente, o modelo físico é implementado em um Sistema de Gerenciamento de Banco de Dados (SGBD),
-          como MySQL ou PostgreSQL. Após a implementação, são realizados testes para garantir a funcionalidade
-          e a performance adequada do sistema.
+          Existem outras notações, como a notação de Chen, que enfatiza as relações entre entidades, e a notação de Bachman, que usa diagramas para mostrar o relacionamento entre os dados. Cada notação tem suas próprias convenções e é escolhida com base nas necessidades do projeto.
         </p>
       </div>
 
