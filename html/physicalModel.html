@@ -82,9 +82,57 @@
                 <br>
             </p>
         </div>
+
+                  <div class="text-container-introductionToDataModeling">
+          <p class="subtitle-text-introductionToDataModeling">
+            Pronto para testar<br />
+            seu conhecimento?
+          </p>
+          <p class="text-introductionToDataModeling">
+            Aqui vai um pequeno questionário para avaliar seu conhecimento! Não
+            se preocupe pois a questão serve apenas para testar seu conhecimento
+            sobre este módulo!
+          </p>
+          <br />
+          <p class="text-introductionToDataModeling">O modelo físico de dados é a última etapa da modelagem. Qual é o foco principal ao criar o modelo físico de dados?</p>
+
+          <form class="form-introductionToDataModeling">
+
+            <div class="radioItem-introductionToDataModeling">
+              <input type="radio" id="question1-A" name="question1" value="question1-A" class="radioButton-introductionToDataModeling"/>
+              <label for="question1-A">
+                <p class="text-introductionToDataModeling">
+                  Definir como os dados serão efetivamente armazenados no sistema de gerenciamento de banco de dados (SGBD).
+                </p>
+              </label>
+            </div>
+
+            <div class="radioItem-introductionToDataModeling">
+              <input type="radio" id="question1-B" name="question1" value="question1-B" class="radioButton-introductionToDataModeling" />
+              <label for="question1-B">
+                <p class="text-introductionToDataModeling">
+                   Criar relatórios de dados baseados em consultas específicas.
+                </p>
+              </label>
+            </div>
+
+            <div class="radioItem-introductionToDataModeling">
+              <input type="radio" id="question1-C" name="question1" value="question1-C" class="radioButton-introductionToDataModeling"/>
+              <label for="question1-C">
+                <p class="text-introductionToDataModeling">
+                  Identificar as principais funções do sistema sem considerar a estrutura dos dados.
+                </p>
+                <p class="text-introductionToDataModeling" id="correctOption"></p>
+              </label>
+            </div>
+            <input type="button" value="Mostrar as respostas" class="submit" id="submit">
+          </form>
+        </div>
+
         <div class="text-physicalModel">
             <a href="../index.html">Voltar para tela de cards!</a>
           </div>
     </div>
 </body>
+<script src="../javascript/physicalModel.js"></script>
 </html>
