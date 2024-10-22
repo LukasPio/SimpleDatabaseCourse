@@ -1,3 +1,27 @@
+.destaque{
+    text-decoration: underline;
+}
+.destaque2{
+    text-decoration: underline;
+}
+.destaque3{
+    text-decoration: underline;
+}
+.destaque4{
+    text-decoration: underline;
+}
+.destaque5{
+    text-decoration: underline;
+}
+.destaque6{
+    text-decoration: underline;
+} 
+.destaque7{
+    text-decoration: underline;
+} 
+
+
+
 .principal-container{
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,42,140,1) 35%, rgba(0,114,255,1) 100%);
