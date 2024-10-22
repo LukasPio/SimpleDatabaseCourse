@@ -96,8 +96,6 @@
 }
 
 .submit{
-    margin-top: 4%;
-    width: 55%;
     text-align: center;
     background-color: transparent;
     border-style: solid;
@@ -148,6 +146,10 @@
     }
     .text{
         font-size: 1.1rem;
+    }
+
+    .submit{
+        font-size: 1.5rem;
     }
 }
 
