@@ -1,49 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/index.css" />
     <title>Como Modelar Dados</title>
-</head>
-<body class="principal-container-howToModelData">
+  </head>
+  
+  <body>
+    <div class="page-modelagem">
 
     <header class="header">
-        <a href="../index.html" class="logo"><img src="../assets/Logo.jpg" width="80vh" height="80vh"></a>
-        <ul class="ul">
-            <li class="li"><a href="../index.html" class="a" id="active">Home</a>
-            <li class="li"><a href="./aboutUs.html" class="a">Quem somos</a></li>
-        </ul>
-    </header>
+      <a href="../index.html" class="logo"><img src="../assets/Logo.jpg" width="80vh" height="80vh"></a>
+      <ul class="ul">
+        <li class="li"><a href="../index.html" class="a" id="active">Home</a>
+        <li class="li"><a href="./aboutUs.html" class="a">Quem somos</a></li>
+      </ul>
+  </header>
 
-    <section class="section-howToModelData">
-        <img src="../assets/Modelos.png" class="img-howToModelData" />
-        <div class="title-howToModelData">
-          Como modelar dados
-        </div>
-      </section>
+  <section class="section">
+      <img src="../assets/Modelos.png" class="img">
+      <div class="title-introductionToDataModeling">Como Criar <br> Modelagem de Dados</div>
+  </section>
+  <div class="container">
+          <div class="text-container">
+            <p class="subtitle-text">O que é Modelagem de Dados</p>
+            <p class="text">
+                A modelagem de dados é o processo de de criação de uma representação visual de um sistema com
+                dados, informações e relações entre dados.
+               Essa representação ajuda a organizar, estruturar e documentar os dados de maneira que
+                facilite a compreensão e o uso 
+               eficaz em aplicações e bancos de dados.  <br>
+              
+            </p>
+     
+          </div>
+
+          <div class="text-container">
+            <p class="subtitle-text">Como Identificar Entidades</p>
+            <p class="text">
+                As entidades no banco de dados são uma forma de visualisação de dados através de um sistema de linhas e colunas. 
+                    Para isso, precisamos primeiro identificar os dados que compõem essas entidades.
+                     Exemplo: Em um sistema de biblioteca, podemos ter os dados como "título" e "autor" em uma entidade "livro" e então colocamos essas 
+                     informações em forma de tabela para criar a entidade.
+              
+            <br>
+            </p>
+          </div>
+          
+          <div class="text-container">
+            <p class="subtitle-text">Como Identificar Atributos</p>
+            <p class="text">
+                Os atributos são caracteristicas de uma entidade.Para identifica-los, 
+            basta analisarmos as propriedades das mesmas. 
+            Exemplo: A entidade "Aluno" tem como atributo o "número da chamada".
+              
+            </p>
+     
+          </div>
 
 
-    <div class="sec-howToModelData">
-        <h2>Placeholder</h2>
-        <p>Ll orem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum exercitationem, 
-            ipsa commodi distinctio velit reprehenderit accusantium eius, natus, iste alias. 
-            Neque nam odio ab adipisci temporibus eius, nesciunt tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, 
-            molestiae? Totam quae sit consectetur, dolorem, 
-            deserunt corporis at illo fuga debitis quidem molestias? 
-            Repellat dignissimos assumenda optio praesentium aliquam enim!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum exercitationem, 
-            ipsa commodi distinctio velit reprehenderit accusantium eius, natus, iste alias. 
-            Neque nam odio ab adipisci temporibus eius, nesciunt tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, 
-            molestiae? Totam quae sit consectetur, dolorem, 
-            deserunt corporis at illo fuga debitis quidem molestias? 
-            Repellat dignissimos assumenda optio praesentium aliquam enim!
-            <br><br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum exercitationem, 
-            ipsa commodi distinctio velit reprehenderit accusantium eius, natus, iste alias. 
-            Neque nam odio ab adipisci temporibus eius, nesciunt tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, 
-         ? 
-            Repellat dignissimos assumenda optio praesentium aliquamium enim!<br><br></p>
+          <div class="text-container">
+            <p class="subtitle-text">Como Relacionar Entidades</p>
+            <p class="text">
+                Os relacionamentos(cardinalidade) servem para ligar uma entidade à outra, permitindo que os dados de várias entidades sejam combinados e consultados de forma eficiente
+             Para relacionar é bem simples: basta identificar os dados e chaves 
+             prímarias (id) de duas entidades e entrelaçar essas informações usando uma chave secundária, elemento esse que serve justamente para 
+             conectar duas entidades
+              
+            </p>
+     
+          </div>
+
+
+          <div class="text-container">
+            <p class="subtitle-text">Modelo Entidade Relacionamento</p>
+            <p class="text">
+                Feito isso, é possivel a criação de um MER (Modelo Entidade Relacionamento) que consiste em uma forma de visualização de elementos do banco
+        de dados (entidade, atributo e relacionamento). Este tipo de modelo é vital para uma boa organização e consistência no bd, permitindo o entendimento 
+    de como os dados se relacionam entre si
+              
+            </p>
+     
+          </div>
+
+          <div class="text-container">
+            <p class="subtitle-text">Diagrama Entidade Relacionamento</p>
+            <p class="text">
+                Outro ponto importante para criar uma boa modelagem é o DER (Diagrama Entidade Relacionamento) um diagrama visual para representar o MER. 
+    Para cria-lo, representamos as entidades nas extremidades da página, com a forma de retângulos e seus nomes no meio deles. 
+    Depois, colocamos os atributos em forma
+de bolinhas conectadas à linhas com as entidades. Se a bolinha estiver pintada, significa que ela é um atributo identificador, algo único em cada entidade (id).
+Por fim, os relacionamentos são representados em forma de losango conectado atraves de linhas com as entidades, conforme o exemplo abaixo:
+ <img src="../assets/attribute.png" class="text-img">
+              
+            </p>
+     
+          </div>
+
+
+
+          <div class="text">
+            <a href="../index.html">Voltar para tela de cards!</a>
+          </div>
+
     </div>
-</body>
+    </div>
+
+  </body>
 </html>

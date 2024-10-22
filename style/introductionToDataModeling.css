@@ -104,8 +104,6 @@
 }
 
 .submit{
-    margin-top: 4%;
-    width: 55%;
     text-align: center;
     background-color: transparent;
     border-style: solid;
@@ -114,6 +112,12 @@
     border-width: 1px;
     font-size: 2rem;
     font-weight: lighter;
+}
+
+#correctOption {
+    margin: 3rem 0;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .submit:hover{
@@ -150,6 +154,10 @@
     }
     .text-introductionToDataModeling{
         font-size: 1.1rem;
+    }
+
+    .submit{
+        font-size: 1.5rem;
     }
 }
 
