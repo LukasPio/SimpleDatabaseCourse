@@ -1,4 +1,4 @@
-.principal-container{
+.principal-container-howToModelData{
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,42,140,1) 35%, rgba(0,114,255,1) 100%);
     min-height: 100vh;
@@ -16,6 +16,7 @@
     align-items: center;
     z-index: 1;
 }
+
 .logo{
     font-weight: 700;
     text-decoration: none;
@@ -48,7 +49,8 @@
     border-radius: 20px;
     
 }
-.section{
+
+.section-howToModelData{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -57,7 +59,8 @@
     justify-content: center;
     align-items: center;
 }
-.section .img{
+
+.section-howToModelData .img-howToModelData{
     position: absolute;
     top: 0;
     left: 0;
@@ -65,18 +68,40 @@
     height: auto;
     object-fit: cover;
 }
-.img{
+
+.img-howToModelData{
     opacity: 0.4;
 }
-#text{
+
+.title-howToModelData{
+    font-size: 2.8rem;
+    font-weight: 650;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #7ddcfa;
+    z-index: 10;
     white-space: nowrap;
-    font-size: 12.5vw;
-    font-size: 3.5em;
-    z-index: 9;
+    text-align: center;
+    word-break: break-word;
 }
-.sec{
+
+.subtitle-text-howToModelData{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text-howToModelData{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: justify;
+}
+
+.sec-howToModelData{
     position: absolute;
     padding: 100px;
     background: rgba(2,0,36,1);
@@ -85,7 +110,7 @@
 
 /*A responsividade estava quebrando, pois a nav bar e o titulo não diminuem junto com o resto da página*/
 @media (max-width: 768px){
-    #text{
+    .title-howToModelData{
         font-size: 2rem;
     }
     .header, .ul{
@@ -94,7 +119,7 @@
 }
 
 @media (max-width: 480px){
-    #text{
+    .title-howToModelData{
         font-size: 1.5rem;
     }
 }

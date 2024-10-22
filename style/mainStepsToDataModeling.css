@@ -1,3 +1,79 @@
+.title-mainStepsToDataModeling{
+    font-size: 2.8rem;
+    font-weight: 650;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #7ddcfa;
+    z-index: 10;
+    white-space: nowrap;
+    text-align: center;
+    word-break: break-word;
+}
+
+.subtitle-text-mainStepsToDataModeling{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text-mainStepsToDataModeling{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: justify;
+}
+
+.page-mainStepsToDataModeling{
+    height: auto;
+    width: 100%;
+    background-color: rgb(38, 42, 46);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,42,140,1) 35%, rgba(0,114,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-mainStepsToDataModeling{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.text-container-mainStepsToDataModeling{
+    width: 70%;
+    padding: 2%;
+    margin-bottom: 5%;
+    background-color: rgba(47, 51, 56, 0);
+}
+
+.section-mainStepsToDataModeling{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-mainStepsToDataModeling .img-mainStepsToDataModeling{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-mainStepsToDataModeling{
+    opacity: 0.4;
+}
+
 ol > .li-mainStepsToDataModeling::before {
     content: "";
 }
@@ -54,64 +130,51 @@ ul > .li-mainStepsToDataModeling::before {
     
 }
 
-.title-mainStepsToDataModeling{
-    font-size: 2.8rem;
-    font-weight: 650;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #7ddcfa;
-    z-index: 10;
-    white-space: nowrap;
-    text-align: center;
-    word-break: break-word;
-}
-
 .li-mainStepsToDataModeling {
     margin-left: 3%;
 }
+
   @media (max-width: 768px){
     .title-mainStepsToDataModeling{
       font-size: 1.6rem;
   }
-  .subtitle-text{
+  .subtitle-text-mainStepsToDataModeling{
       font-size: 1.3rem;
       padding-top: 5%;
       padding-bottom: 5%;
       text-align: center
   }
-  .text{
+  .text-mainStepsToDataModeling{
       font-size: 1.1rem;
   }
 }
 
   @media (max-width: 480px){
-    .title-mainStepsToDataModeling{
+    .title-mainStepsToDataModeling-mainStepsToDataModeling{
         font-size: 1.4rem;
     }
-    .subtitle-text{
+    .subtitle-text-mainStepsToDataModeling{
         font-size: 1.3rem;
         padding-top: 5%;
         padding-bottom: 5%;
         text-align: center
     }
-    .text{
+    .text-mainStepsToDataModeling{
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 328px){
     .title-mainStepsToDataModeling{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
-  .subtitle-text{
+  .subtitle-text-mainStepsToDataModeling{
       font-size: 1.2rem;
       padding-top: 5%;
       padding-bottom: 5%;
       text-align: center;
   }
-  .text{
+  .text-mainStepsToDataModeling{
       font-size: 1rem;
       letter-spacing: 0.5px;
   }

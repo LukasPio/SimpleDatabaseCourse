@@ -1,68 +1,78 @@
-.principal-container {
+.title-logicModel{
+    font-size: 2.8rem;
+    font-weight: 650;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #7ddcfa;
+    z-index: 10;
+    white-space: nowrap;
+    text-align: center;
+    word-break: break-word;
+}
+
+.subtitle-text-logicModel{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.text-logicModel{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: justify;
+}
+
+.principal-container-logicModel{
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 42, 140, 1) 35%, rgba(0, 114, 255, 1) 100%);
-    min-height: 100vh;
+    height: auto;
     width: 100%;
 }
 
-.header {
+.container-logicModel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.text-container-logicModel{
+    width: 70%;
+    padding: 2%;
+    margin-bottom: 5%;
+    background-color: rgba(47, 51, 56, 0);
+}
+
+.section-logicModel{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-logicModel .img-logicModel{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
-
-.logo {
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-left: 20px;
-    padding: 6px 15px;
-}
-
-.li {
-    list-style: none;
-    margin-left: 20px;
-}
-
-.a {
-    text-decoration: none;
-    padding: 6px 15px;
-}
-
-.a:hover,
-#active {
-    background: #fff;
-    color: rgba(0, 114, 255, 1);
-    border-radius: 20px;
-}
-
-.image-container {
-    position: relative;
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.img {
-    width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.img-logicModel{
     opacity: 0.4;
 }
+
+
 
 .text-img{
     width: 100%;
@@ -79,83 +89,47 @@
     box-shadow: 10px 5px 5px rgb(5, 18, 34);
 }
 
-.title{
-    font-size: 2rem;
-    font-weight: 400;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #7ddcfa;
-    z-index: 10;
-    white-space: nowrap;
-    text-align: center;
-    word-break: break-word;
-}
-
-.subtitle-text{
-    font-size: 2.5rem;
-    font-weight: lighter;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-.text{
-    font-size: 1.5rem;
-    font-weight: lighter;
-    justify-content: center;
-    text-align: justify;
-}
-
-
-.sec {
-    position: absolute;
-    padding: 100px;
-    background: rgba(2, 0, 36, 1);
-}
-
 @media (max-width: 768px){
-    .title{
-      font-size: 1.6rem;
-      white-space: pre-wrap;
-  }
-  .subtitle-text{
-      font-size: 1.3rem;
-      padding-top: 5%;
-      padding-bottom: 5%;
-      text-align: center
-  }
-  .text{
-      font-size: 1.1rem;
-  }
-}
-
-  @media (max-width: 480px){
-      .title{
-        font-size: 1.4rem;
+    .title-logicModel{
+        font-size: 2rem;
     }
-    .subtitle-text{
+    .subtitle-text-logicModel{
         font-size: 1.3rem;
         padding-top: 5%;
         padding-bottom: 5%;
         text-align: center
     }
-    .text{
+    .text-logicModel{
+        font-size: 1.1rem;
+    }
+}
+
+  @media (max-width: 480px){
+      .title-logicModel{
+        font-size: 1.4rem;
+    }
+    .subtitle-text-logicModel{
+        font-size: 1.3rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center
+    }
+    .text-logicModel{
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 328px){
-  .title{
-    font-size: 1.2rem;
+  .title-logicModel{
+    font-size: 1.3rem;
   }
-  .subtitle-text{
+  .subtitle-text-logicModel{
       font-size: 1.2rem;
       padding-top: 5%;
       padding-bottom: 5%;
       text-align: center;
   }
-  .text{
+  .text-logicModel{
       font-size: 1rem;
       letter-spacing: 0.5px;
   }
