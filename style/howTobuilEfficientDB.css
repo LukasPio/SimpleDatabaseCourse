@@ -97,7 +97,14 @@
         font-size: 1.1rem;
     }
     .header, .ul{
+        display: flex;
         flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .li {
+        padding-right: 50px;
     }
     .p-dataBase{
         text-align: left;
