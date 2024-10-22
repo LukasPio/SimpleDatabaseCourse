@@ -1,34 +1,15 @@
-.destaque{
-    text-decoration: underline;
-}
-.destaque2{
-    text-decoration: underline;
-}
-.destaque3{
-    text-decoration: underline;
-}
-.destaque4{
-    text-decoration: underline;
-}
-.destaque5{
-    text-decoration: underline;
-}
-.destaque6{
-    text-decoration: underline;
-} 
-.destaque7{
-    text-decoration: underline;
-} 
-
-
-
-.principal-container{
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,42,140,1) 35%, rgba(0,114,255,1) 100%);
-    min-height: 100vh;
-    width: 100%;
+ol > .li-mainStepsToDataModeling::before {
+    content: "";
 }
 
+.li-mainStepsToDataModeling{
+    list-style: none;
+}
+
+ul > .li-mainStepsToDataModeling::before {
+    content: "○";
+    margin-right: 1%;
+}
 .header{
     position: absolute;
     top: 0;
@@ -72,53 +53,67 @@
     border-radius: 20px;
     
 }
-.section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    padding: 5%;     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section .img{
+
+.title-mainStepsToDataModeling{
+    font-size: 2.8rem;
+    font-weight: 650;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.img{
-    opacity: 0.4;
-}
-#text{
-    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #7ddcfa;
+    z-index: 10;
     white-space: nowrap;
-    font-size: 12.5vw;
-    font-size: 3.5em;
-    z-index: 9;
-}
-.sec{
-    position: absolute;
-    padding: 100px;
-    background: rgba(2,0,36,1);
+    text-align: center;
+    word-break: break-word;
 }
 
+.li-mainStepsToDataModeling {
+    margin-left: 3%;
+}
+  @media (max-width: 768px){
+    .title-mainStepsToDataModeling{
+      font-size: 1.6rem;
+  }
+  .subtitle-text{
+      font-size: 1.3rem;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      text-align: center
+  }
+  .text{
+      font-size: 1.1rem;
+  }
+}
 
-/*A responsividade estava quebrando, pois a nav bar e o titulo não diminuem junto com o resto da página*/
-@media (max-width: 768px){
-    #text{
-        font-size: 2rem;
+  @media (max-width: 480px){
+    .title-mainStepsToDataModeling{
+        font-size: 1.4rem;
     }
-    .header, .ul{
-        flex-direction: column;
+    .subtitle-text{
+        font-size: 1.3rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center
+    }
+    .text{
+        font-size: 1.1rem;
     }
 }
 
-@media (max-width: 480px){
-    #text{
-        font-size: 1.5rem;
-    }
+@media (max-width: 328px){
+    .title-mainStepsToDataModeling{
+    font-size: 1.2rem;
+  }
+  .subtitle-text{
+      font-size: 1.2rem;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      text-align: center;
+  }
+  .text{
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+  }
+  
 }
