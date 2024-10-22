@@ -1,107 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/index.css" />
     <link rel="icon" type="image/png" href="../assets/Logo.jpg">
-    <title>Modelo de Notação</title>
-</head>
-<body class="principal-container-logicModel">
+    <title>Principais passos para notação de modelagem de dados</title>
+  </head>
+  
+  <body>
+    <div class="page-mainStepsToDataModeling">
 
     <header class="header">
-        <a href="../index.html" class="logo">
-          <img src="../assets/Logo.jpg" width="80vh" height="80vh"/>
-        </a>
-        <ul class="ul">
-          <li class="li">
-            <a href="../index.html" class="a" id="active">Home</a>
-          </li>
-          <li class="li"><a href="./aboutUs.html" class="a">Quem somos</a></li>
+      <a href="../index.html" class="logo"><img src="../assets/Logo.jpg" width="80vh" height="80vh"></a>
+      <ul class="ul">
+        <li class="li"><a href="../index.html" class="a" id="active">Home</a>
+        <li class="li"><a href="./aboutUs.html" class="a">Quem somos</a></li>
+      </ul>
+  </header>
+
+  <section class="section-mainStepsToDataModeling">
+      <img src="../assets/Modelos.png" class="img-mainStepsToDataModeling">
+      <div class="title-introductionToDataModeling">Notação de <br> modelagem de dados</div>
+  </section>
+
+    <div class="container-mainStepsToDataModeling">
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">O que é a notação de modelagem de dados?</p>
+        <p class="text-mainStepsToDataModeling">
+          A notação de modelagem de dados é essencial para representar visualmente as estruturas de dados
+          e seus relacionamentos em um sistema. Você sabe como usar essa notação de forma eficiente?
+          Aqui estão os principais passos para aplicar corretamente a notação de modelagem de dados:
+        </p>
+        <ul class="text-mainStepsToDataModeling">
+          <li class="li-mainStepsToDataModeling">Entendimento do domínio e levantamento dos requisitos.</li>
+          <li class="li-mainStepsToDataModeling">Definição de entidades e relacionamentos no Modelo (MER).</li>
+          <li class="li-mainStepsToDataModeling">Criação do Diagrama Entidade-Relacionamento (DER).</li>
+          <li class="li-mainStepsToDataModeling">Definição de cardinalidade e participação.</li>
+          <li class="li-mainStepsToDataModeling">Criação do modelo lógico.</li>
+          <li class="li-mainStepsToDataModeling">Normalização de tabelas.</li>
+          <li class="li-mainStepsToDataModeling">Criação do dicionário de dados.</li>
+          <li class="li-mainStepsToDataModeling">Implementação do modelo físico e testes.</li>
         </ul>
-    </header>
+      </div>
 
-    <section class="section-logicModel">
-        <img src="../assets/Modelos.png" class="img-logicModel" />
-        <div class="title-logicModel">
-            Notação de Modelagem de Dados
-        </div>
-    </section>
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">1. Entendimento do domínio e levantamento dos requisitos.</p>
+        <p class="text-mainStepsToDataModeling">
+          O processo começa com a identificação do problema e dos requisitos do sistema.
+          É crucial entender as informações necessárias, como elas se relacionam e o que será modelado.
+          Questões como "Quais entidades e atributos são importantes?" e "Como os dados se conectam?"
+          devem ser respondidas nesta etapa.
+        </p>
+      </div>
 
-    <div class="container-logicModel">
-        <div class="text-container-logicModel">
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">2. Definição de entidades e relacionamentos no MER.</p>
+        <p class="text-mainStepsToDataModeling">
+          O Modelo Entidade-Relacionamento (MER) descreve as entidades do sistema, seus atributos
+          e os relacionamentos entre elas. Por exemplo, em um sistema de gerenciamento de biblioteca,
+          as entidades "Livro" e "Autor" podem se relacionar através de um relacionamento "Escrito por".
+        </p>
+      </div>
 
-            <p class="subtitle-text-logicModel">Notação de Modelagem de Dados</p>
-            <p class="text-logicModel">
-                Após a definição de um modelo conceitual de dados, a próxima etapa em um projeto de Banco de Dados é a construção de um modelo lógico. O modelo lógico descreve as estruturas que serão armazenadas no Banco de Dados, representando graficamente os dados de uma forma lógica. A técnica de modelagem de dados mais amplamente utilizada é a abordagem entidade-relacionamento, que permite a construção de Diagramas de Entidade-Relacionamento (DER). <br>
-                Existem várias notações de modelagem de dados, sendo a mais comum a notação relacional.
-                <br><br><br>
-            </p>
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">3. Criação do Diagrama Entidade-Relacionamento (DER).</p>
+        <p class="text-mainStepsToDataModeling">
+          O Diagrama Entidade-Relacionamento (DER) é a representação visual do MER, permitindo visualizar
+          as entidades, seus atributos e como elas se relacionam. É uma ferramenta fundamental para
+          entender a estrutura dos dados no sistema.
+          <br>
+          <img src="../assets/DER.jpg" class="text-img">
+        </p>
+      </div>
 
-            <p class="text-logicModel">
-                Notação de Rede: é representada por um conjunto de registros, onde as relações são realizadas por meio de ponteiros;
-                <br><br>
-                Representação gráfica:
-                <br>
-                <img src="../assets/rede.jpg" class="text-img2">
-                <br><br>
-                Notação Hierárquica: similar à notação em rede, mas os registros são armazenados em uma estrutura de árvore;
-                <br><br>
-                Representação gráfica:
-                <br>
-                <img src="../assets/hierarchicalmodel.jpg" class="text-img2">
-                <br><br>
-                Notação Orientada a Objetos: sugere que os dados são armazenados em estruturas de objetos, conforme o nome indica;
-                <br><br>
-                Representação gráfica:
-                <br>
-                <img src="../assets/MOO.jpg" class="text-img2">
-                <br><br>
-                Notação Relacional: utiliza um conjunto de tabelas compostas por linhas e colunas.
-                <br><br>
-                Representação gráfica:
-                <br>
-                <img src="../assets/relacional2.jpg" class="text-img2">
-                <br>
-            </p>
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">4. Definição de cardinalidade e participação.</p>
+        <p class="text-mainStepsToDataModeling">
+          A cardinalidade define quantas ocorrências de uma entidade estão associadas a outra.
+          Por exemplo, um "Cliente" pode fazer "Múltiplos Pedidos", mas cada pedido é feito por apenas um cliente.
+          A participação define se o relacionamento é obrigatório ou opcional.
+        </p>
+      </div>
 
-            <p class="subtitle-text">Notação Relacional</p>
-            <p class="text">
-                Um banco de dados relacional é composto por tabelas, que também são chamadas de relações. A terminologia "tabela" é mais comum em produtos comerciais e na prática. <br>
-                Tabelas consistem em um conjunto não ordenado de linhas (também chamadas de tuplas). Cada linha é composta por uma série de campos (atributos), e cada campo é identificado por um nome. O conjunto de campos de todas as linhas de uma tabela forma uma coluna.
-                <br><br>
-                Representação gráfica:
-                <br>
-                <img src="../assets/Relacional1.png" class="text-img2">
-            </p>
-            <p class="subtitle-text-logicModel">Chaves:</p>
-            <p class="text-logicModel">
-                As chaves identificam linhas e relacionam tabelas em um Banco de Dados Relacional. <br>
-                Em um Banco de Dados Relacional, existem basicamente 3 tipos de chaves que devem ser considerados:
-                <ul class="text-logicModel">
-                    <li class="li-mainStepsToDataModeling">
-                        Chave Primária;
-                    </li>
-                    <li class="li-mainStepsToDataModeling">
-                        Chave Estrangeira;
-                    </li>
-                    <li class="li-mainStepsToDataModeling">
-                        Chave Candidata.
-                    </li>
-                </ul>
-                <br>
-                <p class="text-logicModel">
-                    Chave Primária: Uma coluna (ou uma combinação delas) cujos valores distinguem uma linha das demais dentro da mesma tabela. Uma chave primária não pode conter valores nulos e não pode se repetir. Por exemplo: o CPF de um indivíduo.
-                    <br>
-                    Chave Estrangeira: Uma coluna (ou uma combinação de colunas) cujos valores aparecem obrigatoriamente na chave primária de uma tabela. Uma chave Estrangeira permite a implementação dos relacionamentos entre tabelas de um Banco de Dados Relacional.
-                    <br>
-                    Chave Candidata (ou Alternativa): Uma coluna (ou uma combinação de colunas) que é candidata a ser uma chave primária. Possui as mesmas características de uma chave primária, mas não foi escolhida pelo projetista do Banco de Dados Relacional.
-                </p>
-            </p>
-        </div>
-        <div class="text-logicModel">
-            <a href="../index.html">Voltar para a tela de cards!</a>
-        </div>
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">5. Criação do modelo lógico.</p>
+        <p class="text-mainStepsToDataModeling">
+          O modelo lógico transforma o DER em tabelas que podem ser implementadas em um banco de dados relacional.
+          As entidades tornam-se tabelas, os atributos viram colunas, e os relacionamentos são representados
+          através de chaves estrangeiras.
+        </p>
+      </div>
+
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">6. Normalização de tabelas.</p>
+        <p class="text-mainStepsToDataModeling">
+          A normalização assegura que as tabelas sejam estruturadas corretamente, eliminando redundâncias
+          e garantindo a consistência dos dados. Ela envolve uma série de regras aplicadas para dividir os
+          dados em tabelas adequadas.
+        </p>
+      </div>
+
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">7. Criação do dicionário de dados.</p>
+        <p class="text-mainStepsToDataModeling">
+          O dicionário de dados documenta todos os detalhes do modelo, incluindo entidades, atributos,
+          tipos de dados, restrições e relacionamentos. É uma ferramenta vital para a manutenção e
+          expansão futura do sistema.
+        </p>
+      </div>
+
+      <div class="text-container-mainStepsToDataModeling">
+        <p class="subtitle-text-mainStepsToDataModeling">8. Implementação do modelo físico e testes.</p>
+        <p class="text-mainStepsToDataModeling">
+          Finalmente, o modelo físico é implementado em um Sistema de Gerenciamento de Banco de Dados (SGBD),
+          como MySQL ou PostgreSQL. Após a implementação, são realizados testes para garantir a funcionalidade
+          e a performance adequada do sistema.
+        </p>
+      </div>
+
+      <div class="text-mainStepsToDataModeling">
+        <a href="../index.html">Voltar para tela de cards!</a>
+      </div>
+
     </div>
-</body>
+  </body>
 </html>
