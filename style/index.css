@@ -21,7 +21,6 @@
     height: 230px;
     width: 350px;
     border: solid black 2px;
-    background-image: url("../assets/ModelagemDeDados.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -29,6 +28,13 @@
     justify-content: end;
     margin: 1rem;
     border-radius: 4px;
+    transition: 0.6s;
+}
+
+.course-card:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    transform: scale(1.05);
 }
 
 .course-title {
@@ -42,6 +48,38 @@
     font-size: 2.5rem;
     margin-top: 0.75rem;
     text-align: center;
+}
+
+.how-to-model-data {
+    background-image: url("../assets/ModelagemDeDados.png");
+}
+
+.main-function-model-data {
+    background-image: url("../assets/principais_etapas.png");
+}
+
+.how-to-build {
+    background-image: url("../assets/how_to_build.webp");
+}
+
+.notation-data {
+    background-image: url("../assets/notation-data.webp");
+}
+
+.physic_model {
+    background-image: url("../assets/physic_model.webp");
+}
+
+.logic_model {
+    background-image: url("../assets//modelologico.jpg");
+}
+
+.conceitual_model {
+    background-image: url("../assets/modeloconceitual.jpg");
+}
+
+.model-data {
+    background-image: url("../assets/model-data.webp");
 }
 
 @media (max-width: 760px) {
