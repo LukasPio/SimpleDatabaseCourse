@@ -66,11 +66,52 @@
     justify-content: center;
     text-align: justify;
 }
-
+.li-introductionToDataModeling{
+    list-style: none;
+}
   
 .li-introductionToDataModeling:before {
     content: "-->";
     padding-right: 5px;
+}
+
+.form-introductionToDataModeling{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radioItem-introductionToDataModeling{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.radioButton-introductionToDataModeling{
+    flex-shrink: 0;
+    margin-right: 2%;
+    width: 25px;
+    height: 25px;
+}
+
+.submit{
+    margin-top: 4%;
+    width: 55%;
+    text-align: center;
+    background-color: transparent;
+    border-style: solid;
+    border-color: whitesmoke;
+    padding: 5%;
+    border-width: 1px;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.submit:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgba(2, 0, 36, 0.568);
 }
 
   @media (max-width: 768px){
