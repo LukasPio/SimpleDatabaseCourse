@@ -126,6 +126,45 @@
     background-color: rgba(2, 0, 36, 0.568);
 }
 
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 20px; 
+    text-decoration: none;
+    padding: 6px 15px;
+}
+.li{
+    list-style: none;
+    margin-left: 20px; 
+    text-decoration: none;
+    padding: 6px 15px;
+}
+.a{
+    text-decoration: none;
+    padding: 6px 15px;
+}
+.a:hover, #active{
+    background: #fff;
+    color: rgba(0,114,255,1);
+    border-radius: 20px;
+    
+}
+
+
   @media (max-width: 768px){
     .title-introductionToDataModeling{
       font-size: 2rem;
@@ -134,12 +173,22 @@
       font-size: 1.3rem;
       padding-top: 5%;
       padding-bottom: 5%;
-      text-align: center
+      text-align: center;
   }
   .text-introductionToDataModeling{
       font-size: 1.1rem;
       text-align: left;
   }
+  .li{
+    list-style: none;
+    margin-left: 5px; 
+    text-decoration: none;
+    padding: 3px 7px;
+}
+.a{
+    text-decoration: none;
+    padding: 3px 7px;
+}
 }
 
   @media (max-width: 480px){

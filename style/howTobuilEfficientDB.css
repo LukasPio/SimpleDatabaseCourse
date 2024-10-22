@@ -96,7 +96,7 @@
     .text-DB{
         font-size: 1.1rem;
     }
-    .header, .ul{
+    .header{
         display: flex;
         flex-direction: column;
         width: 100vw;
@@ -106,7 +106,7 @@
     .li {
         padding-right: 50px;
     }
-    .p-dataBase{
+    .p{
         text-align: left;
     }
 }
