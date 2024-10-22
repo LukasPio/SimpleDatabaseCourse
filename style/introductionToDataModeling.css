@@ -108,6 +108,12 @@
     font-weight: lighter;
 }
 
+#correctOption {
+    margin: 3rem 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .submit:hover{
     cursor: pointer;
     transition: 0.3s;
